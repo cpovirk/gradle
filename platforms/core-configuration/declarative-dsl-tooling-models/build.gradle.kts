@@ -38,7 +38,7 @@ dependencies {
 tasks.withType<KotlinCompile>().configureEach {
     compilerOptions {
         apiVersion.set(KotlinVersion.KOTLIN_1_9)
-        languageVersion.set(KotlinVersion.KOTLIN_2_1)
+        languageVersion.set(KotlinVersion.KOTLIN_2_0)
     }
 }
 tasks.isolatedProjectsIntegTest {

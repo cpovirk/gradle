@@ -62,7 +62,7 @@ abstract class KotlinDslCompilerPlugins : Plugin<Project> {
                         }
                     }
                     apiVersion.set(KotlinVersion.KOTLIN_1_8)
-                    languageVersion.set(KotlinVersion.KOTLIN_2_1)
+                    languageVersion.set(KotlinVersion.KOTLIN_2_0)
                     freeCompilerArgs.addAll(KotlinDslPluginSupport.kotlinCompilerArgs)
                 }
 //                kotlinCompile.setWarningRewriter(ExperimentalCompilerWarningSilencer(listOf(
