@@ -40,8 +40,8 @@ abstract class KotlinDslStandaloneScriptCompilationConfiguration protected const
         "-Xjspecify-annotations=strict",
         "-Xskip-prerelease-check",
         "-Xallow-unstable-dependencies",
-//        "-XXLanguage:+DisableCompatibilityModeForNewInference",
-//        "-XXLanguage:-TypeEnhancementImprovementsInStrictMode",
+        "-XXLanguage:+DisableCompatibilityModeForNewInference",
+        "-XXLanguage:-TypeEnhancementImprovementsInStrictMode",
     ))
     annotationsForSamWithReceivers.put(listOf(
         KotlinType(HasImplicitReceiver::class),

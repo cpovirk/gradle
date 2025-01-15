@@ -474,10 +474,10 @@ fun gradleKotlinDslLanguageVersionSettingsFor(compilerOptions: KotlinCompilerOpt
         AnalysisFlags.allowUnstableDependencies to true,
         JvmAnalysisFlags.jvmDefaultMode to JvmDefaultMode.ALL,
     ),
-//    specificFeatures = mapOf(
-//        LanguageFeature.DisableCompatibilityModeForNewInference to LanguageFeature.State.ENABLED,
-//        LanguageFeature.TypeEnhancementImprovementsInStrictMode to LanguageFeature.State.DISABLED,
-//    )
+    specificFeatures = mapOf(
+        LanguageFeature.DisableCompatibilityModeForNewInference to LanguageFeature.State.ENABLED,
+        LanguageFeature.TypeEnhancementImprovementsInStrictMode to LanguageFeature.State.DISABLED,
+    )
 )
 
 
