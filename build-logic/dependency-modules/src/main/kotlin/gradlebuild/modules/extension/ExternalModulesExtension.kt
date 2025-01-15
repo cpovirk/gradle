@@ -111,6 +111,7 @@ abstract class ExternalModulesExtension(isBundleGroovy4: Boolean) {
     val jna = "net.java.dev.jna:jna"
     val joda = "joda-time:joda-time"
     val jsch = "com.github.mwiede:jsch"
+    val jspecify = "org.jspecify:jspecify"
     val jsr305 = "com.google.code.findbugs:jsr305"
     val julToSlf4j = "org.slf4j:jul-to-slf4j"
     val junit = "junit:junit"
@@ -285,6 +286,7 @@ abstract class ExternalModulesExtension(isBundleGroovy4: Boolean) {
         jgit to License.EDL,
         joda to License.Apache2,
         jsch to License.BSDStyle,
+        jspecify to License.Apache2,
         jsr305 to License.BSD3,
         julToSlf4j to License.MIT,
         junit to License.EPL,

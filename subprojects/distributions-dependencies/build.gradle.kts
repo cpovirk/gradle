@@ -126,6 +126,7 @@ dependencies {
         api(libs.joptSimple)            { version { strictly("5.0.4"); because("needed to create profiler in Gradle profiler API") }}
         api(libs.jsch)                  { version { strictly("0.2.16") }}
         api(libs.jsoup)                 { version { strictly("1.15.3") }}
+        api(libs.jspecify)              { version { strictly("1.0.0") }}
         api(libs.jsr305)                { version { strictly("3.0.2") }}
         api(libs.julToSlf4j)            { version { strictly(slf4jVersion) }}
         api(libs.junit)                 { version { strictly("4.13.2") }}

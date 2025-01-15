@@ -1508,6 +1508,11 @@
             <sha256 value="03acd6adab2da447f49814751b0e953fb62a6a1023f9d2a705c30a6e3e4638eb" origin="Verified" reason="Artifact is not signed"/>
          </artifact>
       </component>
+      <component group="org.jspecify" name="jspecify" version="1.0.0">
+         <artifact name="jspecify-1.0.0.jar">
+            <pgp value="41CD49B4EF5876F9E9F691DABAC30622339994C4"/>
+         </artifact>
+      </component>
       <component group="org.jvnet.staxex" name="stax-ex" version="1.8.1">
          <artifact name="stax-ex-1.8.1.jar">
             <pgp value="04543577D6A9CC626239C50C7ECBD740FF06AEB5"/>
