@@ -37,7 +37,7 @@ fun KotlinCompile.configureKotlinCompilerForGradleBuild() {
     compilerOptions {
         //allWarningsAsErrors = true
         apiVersion = KotlinVersion.KOTLIN_1_8
-        languageVersion = KotlinVersion.KOTLIN_1_8
+        languageVersion = KotlinVersion.KOTLIN_2_0
         jvmTarget = JvmTarget.JVM_1_8
         freeCompilerArgs.addAll(
             "-Xjsr305=strict",
@@ -54,7 +54,7 @@ fun CompilerConfiguration.configureKotlinCompilerForGradleBuild() {
     put(
         CommonConfigurationKeys.LANGUAGE_VERSION_SETTINGS,
         LanguageVersionSettingsImpl(
-            languageVersion = LanguageVersion.KOTLIN_1_8,
+            languageVersion = LanguageVersion.KOTLIN_2_0,
             apiVersion = ApiVersion.KOTLIN_1_8,
             analysisFlags = mapOf(
                 JvmAnalysisFlags.javaTypeEnhancementState to JavaTypeEnhancementState(
