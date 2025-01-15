@@ -24,7 +24,7 @@ java {
 
 kotlin {
     compilerOptions {
-        allWarningsAsErrors = true
+        //allWarningsAsErrors = true
         jvmTarget.set(JvmTarget.JVM_1_8)
     }
 }

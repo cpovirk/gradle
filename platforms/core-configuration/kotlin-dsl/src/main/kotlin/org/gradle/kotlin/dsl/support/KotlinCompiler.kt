@@ -661,7 +661,7 @@ class LoggingMessageCollector(
         fun onWarning() {
             when (onCompilerWarning) {
                 EmbeddedKotlinCompilerWarning.FAIL -> onError()
-                EmbeddedKotlinCompilerWarning.WARN -> onError()
+                EmbeddedKotlinCompilerWarning.WARN -> log.warn { taggedMsg() }
                 EmbeddedKotlinCompilerWarning.DEBUG -> log.debug { taggedMsg() }
             }
         }
