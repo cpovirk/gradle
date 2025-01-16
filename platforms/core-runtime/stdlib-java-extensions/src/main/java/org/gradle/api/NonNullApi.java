@@ -36,9 +36,9 @@ import java.lang.annotation.Target;
  * @since 4.2
  */
 @Target({ElementType.TYPE, ElementType.PACKAGE})
-@org.jetbrains.annotations.NotNull
-@Nonnull
-@TypeQualifierDefault({ElementType.METHOD, ElementType.PARAMETER})
+//@org.jetbrains.annotations.NotNull
+//@Nonnull
+//@TypeQualifierDefault({ElementType.METHOD, ElementType.PARAMETER})
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 public @interface NonNullApi {
