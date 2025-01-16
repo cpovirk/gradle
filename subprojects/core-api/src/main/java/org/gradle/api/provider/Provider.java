@@ -22,6 +22,7 @@ import org.gradle.api.Transformer;
 import org.gradle.api.specs.Spec;
 import org.gradle.internal.HasInternalProtocol;
 
+import org.jspecify.annotations.NullMarked;
 import javax.annotation.Nullable;
 import java.util.concurrent.Callable;
 import java.util.function.BiFunction;
@@ -124,7 +125,8 @@ public interface Provider<T> {
      * @param transformer The transformer to apply to values. May return {@code null}, in which case the provider will have no value.
      * @since 4.3
      */
-    <S> Provider<S> map(Transformer<? extends @org.jetbrains.annotations.Nullable S, ? super T> transformer);
+    @NullMarked
+    <S> Provider<S> map(Transformer<? extends S, ? super T> transformer);
 
     /**
      * Returns a new {@link Provider} with the value of this provider if the passed spec is satisfied and no value otherwise.
