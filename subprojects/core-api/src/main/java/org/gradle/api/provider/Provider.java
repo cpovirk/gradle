@@ -126,7 +126,7 @@ public interface Provider<T> {
      * @since 4.3
      */
     @NullMarked
-    <S> Provider<S> map(Transformer<? extends S, ? super T> transformer);
+    <S extends @org.jetbrains.annotations.Nullable Object> Provider<S> map(Transformer<? extends S, ? super T> transformer);
 
     /**
      * Returns a new {@link Provider} with the value of this provider if the passed spec is satisfied and no value otherwise.

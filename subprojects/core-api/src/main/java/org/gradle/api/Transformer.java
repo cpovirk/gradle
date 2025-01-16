@@ -26,7 +26,7 @@ import org.jspecify.annotations.NullMarked;
  * @param <IN> The type of the value to be transformed.
  */
 @NullMarked
-public interface Transformer<OUT extends Object, IN> {
+public interface Transformer<OUT extends @org.jetbrains.annotations.Nullable Object, IN extends @org.jetbrains.annotations.Nullable Object> {
     /**
      * Transforms the given object, and returns the transformed value.
      *

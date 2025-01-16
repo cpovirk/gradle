@@ -443,7 +443,7 @@ class ConfigurationCacheFingerprintWriter(
 
             is SystemPropertiesPrefixedByValueSource.Parameters -> {
                 val prefix = parameters.prefix.get()
-                addSystemPropertiesPrefixedByToFingerprint(prefix, obtainedValue.value.get().uncheckedCast())
+                addSystemPropertiesPrefixedByToFingerprint(prefix, obtainedValue.value.get()!!.uncheckedCast())
                 reportUniqueSystemPropertiesPrefixedByInput(prefix)
             }
 
@@ -453,7 +453,7 @@ class ConfigurationCacheFingerprintWriter(
 
             is EnvironmentVariablesPrefixedByValueSource.Parameters -> {
                 val prefix = parameters.prefix.get()
-                addEnvVariablesPrefixedByToFingerprint(prefix, obtainedValue.value.get().uncheckedCast())
+                addEnvVariablesPrefixedByToFingerprint(prefix, obtainedValue.value.get()!!.uncheckedCast())
                 reportUniqueEnvironmentVariablesPrefixedByInput(prefix)
             }
 

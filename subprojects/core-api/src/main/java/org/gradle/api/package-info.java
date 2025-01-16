@@ -18,4 +18,5 @@
  * <p>Gradle's build language API, which is available from your build files.
  * Location of the main interfaces involved in build scripts.</p>
  */
+@org.gradle.api.NonNullApi
 package org.gradle.api;
