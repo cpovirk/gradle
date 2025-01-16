@@ -16,6 +16,10 @@
 
 package org.gradle.kotlin.dsl.support
 
+import org.jetbrains.kotlin.load.java.JavaTypeEnhancementState
+import org.jetbrains.kotlin.load.java.Jsr305Settings
+import org.jetbrains.kotlin.load.java.ReportLevel
+
 import com.google.common.annotations.VisibleForTesting
 import org.gradle.api.JavaVersion
 import org.gradle.api.SupportsKotlinAssignmentOverloading
@@ -473,6 +477,9 @@ fun gradleKotlinDslLanguageVersionSettingsFor(compilerOptions: KotlinCompilerOpt
         AnalysisFlags.skipPrereleaseCheck to true,
         AnalysisFlags.allowUnstableDependencies to true,
         JvmAnalysisFlags.jvmDefaultMode to JvmDefaultMode.ALL,
+        JvmAnalysisFlags.javaTypeEnhancementState to JavaTypeEnhancementState(
+            Jsr305Settings(ReportLevel.STRICT, ReportLevel.STRICT)
+        ) { ReportLevel.STRICT },
     ),
     specificFeatures = mapOf(
         LanguageFeature.DisableCompatibilityModeForNewInference to LanguageFeature.State.ENABLED,
